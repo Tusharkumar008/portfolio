@@ -1,0 +1,20 @@
+# python program for implementation of linear search
+def search(arr, x):
+ 
+    for i in range(len(arr)):
+ 
+        if arr[i] == x:
+            return i
+ 
+    return -1
+# Example  
+if __name__ == "__main__":
+    my_array = [64, 34, 25, 12, 22, 11, 90]
+    target_element = 22
+    
+    result = linear_search(my_array, target_element)
+    
+    if result != -1:
+        print(f"Element {target_element} found at index {result}.")
+    else:
+        print(f"Element {target_element} not found in the array.")
